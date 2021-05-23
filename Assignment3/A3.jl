@@ -179,10 +179,10 @@ N3=Normal(1,1)
 N31=Normal(5,1)
 
 # ╔═╡ 24eb5c96-9572-11eb-1f4e-4fc8eee5fccc
-s3=rand(N3,300)
+s3=rand(N3,700)
 
 # ╔═╡ 74541438-9572-11eb-00b3-f181235bab5c
-s31=rand(N31,700)
+s31=rand(N31,300)
 
 # ╔═╡ 7bfc20ae-9572-11eb-1f33-a14b0c4e64b1
 append!(s3,s31)
