@@ -87,7 +87,7 @@ md"
 # ╔═╡ 406bbd20-b281-11eb-2d3f-f12dbf7a154e
 # mean np=50*0.55=27.5
 #sigma=sqrt(np(1-p))=3.5178
-zscre2=zscore([30,29.5],27.5,3.5178)
+zscre2=zscore([30,29.5],29.5,3.4777)
 
 # ╔═╡ 6ad40550-b280-11eb-3ea1-67d2d0d37ed8
 ## using Clt
@@ -106,7 +106,7 @@ begin
 			push!(smpls,rand(1:100))
 		end		
 		for i in smpls
-			if(i<=55)
+			if(i<=59)
 				hds+=1
 			end
 		end
@@ -122,7 +122,7 @@ end
 ## using Binomial
 
 begin
-bn2=Binomial(50,0.55)	
+bn2=Binomial(50,0.59)	
 bprob2=0
 	for i in range(30,length=50)
 		bprob2=bprob2+pdf(bn2,i)
